@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#root{
+    background-color: rgb(108, 108, 108);
+    height: 100vh;
+}

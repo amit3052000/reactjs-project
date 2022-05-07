@@ -1,0 +1,23 @@
+.layer-box{
+    display: flex;
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    
+    width: 70px;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+.layer-box > img{
+    /* background-color: blue; */
+    width: 35px;
+    margin: 10px;
+}
+
+.hvr1:hover,.hvr2:hover,.hvr3:hover{
+    
+    width: 40px;
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
