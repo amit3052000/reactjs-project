@@ -1,26 +1,17 @@
 import React from 'react'
 import "../MyCSS/content.css"
+import { Route, Routes } from 'react-router-dom';
+import ContentHome from './ContentHome';
+import About from './About';
 
 export default function Content() {
   return (
     <div className='content-box'>
-        <div className='content1'>
-            <div className="c1-1">How to master an</div>
-            <div className='c1-2'>off duty look!</div>
-            <div className='more'>
-                <div className='line'></div>
-                <div className='read'>Read</div>
-            </div>
-        </div>
-        <div className='content2'>
-            <div className="c2-1">2</div>
-        </div>
-        <div className='content3'>
-            <div className="c3">3</div>
-        </div>
-        <div className='content4'>
-            <div className="c4">4</div>
-        </div>
+            <Routes>
+                    <Route path='/' element={<ContentHome></ContentHome>}></Route>
+                    <Route path='/about' element={<About></About>}></Route>
+            </Routes>
+    
     </div>
   )
 }
